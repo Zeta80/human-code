@@ -1,0 +1,26 @@
+Fare la spesa: 
+
+DATI:
+Lista Frigo: [Yougurt, Latte, Pesto, Uova, Insalata, Zucchine, Carne]
+Lista Da comprare: [Pane, Yougurt, Biscotti, Insalata, Crocchette, Snack, Carne]
+Lista Carrello: []
+Coupon: 1;
+
+ALGORITMO
+1. SE Lista Frigo è quasi vuota(< tot. elementi)
+    - Andiamo al supermercato
+
+2.  SE la lista Da comprare non è finita
+        - Prendiamo un elemento in ordine dalla Lista Da comprare
+        2.1 SE non è presente nella lista frigo
+            - Aggiungiamo l'elemento nella Lista Carrello
+            - ritorno al punto 2.
+        2.2 ALTRIMENTI SE è presente nella frigo
+            - ritorno al punto 2.
+
+3.  SE Abbiamo controllato tutta la lista da comprare
+        - andare alla cassa
+        3.1 SE ho almeno un coupon
+            3.2 SE il coupon è scaduto
+            - Pago con il Saldo Portafoglio
+        3.3 ALTRIMENTI Pago con il saldo Portafoglio
